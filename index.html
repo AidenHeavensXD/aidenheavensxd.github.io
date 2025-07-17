@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภารกิจลับน้องรหัสพี่รหัส</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ภารกิจลับจากพี่รหัส!</h1>
+            <p>ถอดรหัสลับเพื่อไขความลับของเรากัน!</p>
+        </header>
+
+        <section id="welcome-screen" class="screen active">
+            <h2>ยินดีต้อนรับน้องรหัสผู้กล้า!</h2>
+            <p>พร้อมจะเริ่มภารกิจผจญภัยในโลกแห่งโค้ดดิ้งแล้วหรือยัง?</p>
+            <button id="start-button" class="button">เริ่มภารกิจลับ</button>
+        </section>
+
+        <section id="puzzle-screen" class="screen">
+            <h2 id="puzzle-title"></h2>
+            <div class="puzzle-content" id="puzzle-content">
+                </div>
+            <input type="text" id="answer-input" class="input-field" placeholder="ป้อนคำตอบลับของคุณที่นี่...">
+            <button id="submit-button" class="button">ส่งคำตอบ</button>
+            <p id="feedback-message" class="feedback"></p>
+        </section>
+
+        <section id="final-screen" class="screen">
+            <h2>ภารกิจสำเร็จ! ยินดีด้วยนะน้องรหัสสุดเจ๋ง!</h2>
+            <p>เธอได้ไขปริศนาทั้งหมดแล้ว! เตรียมตัวพบกับพี่รหัสได้เลย!</p>
+            <div id="final-message">
+                </div>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eXU1aHNnd2R2MmNydWhxYzNqdjc1cjNza3B1Y3F3YzA2aG9qMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lqSDxL8M47pB4kPqFk/giphy.gif" alt="Congratulation GIF" class="congrats-gif">
+            <p class="redirect-message">กำลังพาเธอไปพบพี่รหัส...</p>
+        </section>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="background_music.mp3" type="audio/mpeg">
+        เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
