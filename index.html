@@ -1,59 +1,74 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - [ชื่อของคุณ]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=5.0>
+    <meta name="description" content="Personal Portfolio Website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#ccdcec">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Aiden Heavens</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="profile.jpg" alt="รูปโปรไฟล์ของคุณ" class="profile-img">
-            <h1>สวัสดีครับ! ผม Aiden Heavens</h1>
-            <p class="tagline">โปรแกรมเมอร์ผู้หลงใหลในการสร้างสรรค์สิ่งใหม่ๆ</p>
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="about">
-            <h2>เกี่ยวกับผม</h2>
-            <p>ผมเป็นโปรแกรมเมอร์ที่เน้นการพัฒนาเว็บและแอปพลิเคชันที่มีประสิทธิภาพและใช้งานง่าย มีความสนใจในการเรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ</p>
-            <p>ผมมีประสบการณ์ในการทำงานกับ [โปรเจกต์/ภาษาโปรแกรมที่คุณเชี่ยวชาญเพิ่มเติม]</p>
-        </section>
-
-        <hr>
-
-        <section id="skills">
-            <h2>ทักษะของผม</h2>
-            <div class="skills-grid">
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">TypeScript</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">React.js</div>
-                <div class="skill-item">Vue.js</div>
-                <div class="skill-item">Lua</div>
-                <div class="skill-item">MongoDB</div>
-                <div class="skill-item">SQLite3</div>
+    <main>
+        <section id="home" class="hero">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <div class="profile-info">
+                    <p><strong>Aiden Heavens , | Aka: Alya</strong></p>
+                    <p>Coding and Music is my life !</p>
+                    <div style="width: 300px; margin: 1rem auto 0;">
+                        <iframe 
+                            src="https://open.spotify.com/embed/track/43NvEa5AyPEsYg0LLxx3Iq?utm_source=generator" 
+                            width="300" 
+                            height="152" 
+                            style="border-radius:12px; border: none;" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <!-- Discord Status Section -->
+                    <div class="discord-status">
+                        <img id="discord-avatar" src="https://placehold.co/60x60/cccccc/ffffff?text=?" alt="Discord Avatar">
+                        <div class="discord-info">
+                            <p id="discord-name">กำลังโหลด...</p>
+                            <p id="discord-status-text">สถานะ: ออฟไลน์</p>
+                            <p id="discord-activity">กิจกรรม: ไม่มี</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1>สวัสดีวัน<span class="highlight"></span></h1>
+                <p>คำอวยพรประจำวันหนะฉันซ่อนมันไปหมดแล้วลองไปหาซะสิ<span class="cursor">_</span></p>
+                <div class="social-icons">
+                    <a href="https://discord.gg/aidenheavens" target="_blank" title="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://github.com/aidenheavensxd" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@hiroshimaaidens" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://vrchat.com/" target="_blank" title="VRChat">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </a>
+                </div>
+                
+                <!-- Donation Section -->
+                <div class="donation-section">
+                    <h2>สนับสนุน</h2>
+                    <a href="https://easydonate.app/AidenHeavens" target="_blank" class="donation-button">
+                        <i class="fas fa-heart"></i>
+                        <span>โดเนทขึ้นจอ</span>
+                    </a>
+                    <p class="donation-info">สนับสนุนผ่านธนาคาร หรือ wallet</p>
+                </div>
             </div>
         </section>
-
-        <hr>
-
-        <section id="contact">
-            <h2>ติดต่อผม</h2>
-            <p>คุณสามารถติดต่อผมได้ทางอีเมล: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>หรือเยี่ยมชม GitHub ของผม: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-        </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Aiden Heavens. All rights reserved.</p>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
-
